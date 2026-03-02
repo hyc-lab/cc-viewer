@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.6 (2026-03-03)
+
+- Fix: Native mode shell hook now passthrough non-API commands directly without ccv interception
+- Added passthrough list for subcommands: `doctor`, `install`, `update`, `upgrade`, `auth`, `setup-token`, `agents`, `plugin`, `mcp`
+- Added passthrough list for flags: `--version`, `-v`, `--v`, `--help`, `-h`
+- These commands don't involve API calls and don't need proxy/logging
+
 ## 1.4.5 (2026-03-03)
 
 - Feat: LAN access with token-based security — server listens on 0.0.0.0 with random token for non-localhost requests
